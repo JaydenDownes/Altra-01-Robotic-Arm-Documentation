@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/basic/favicon.ico" type="image/x-icon">
+    <title>Robotic Arm</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style>
+        .loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F5F8FA;
+            z-index: 9998;
+            text-align: center;
+        }
+
+        .plane-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+<!-- Pre loader -->
+<div id="loader" class="loader">
+    <div class="plane-container">
+        <div class="l-s-2 blink">LOADING</div>
+    </div>
+</div>
+
+<div id="app" class="paper-loading">
+<main class="single">
+    <!-- Header -->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="col-xl-10 mx-md-auto ">
+                <article class="post">
+                    <p class="excerpt">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don&#x2019;t look even slightly believable.</p>
+                    <h3>Design Brief:</h3>
+                    <p>Currently there are a lack in automation in construction, most work is currently done by builders manually which can easily result in injury or buildings taking long periods of time to build. You are to create a robotic arm that is capable of building houses and larger structures. The robotic arm needs to be able to lift heavy loads, be easily transportable and very heavy duty as it will be placed on construction sites. The robot should also be able to reach into places that would normally be difficult for cranes and must be faster then original methods of building structures and moving objects / materials.
+                    </p>
+                    <br>
+                    <h3>Specifacation (Ideas):</h3>
+                    <ul class="iconList p-t-b-20 ">
+                        <li>Mounting points on claw for safety to secure load.</li>
+                        <li>Concrete and other building materials can’t easily stick to the arm or break the arm if they were to fall on any part of the robot.</li>
+                        <li>Extra safety features like sensors to stop the arm before it hits something or someone.</li>
+                        <li>Compact + must be able to packed up with ease (Modular).</li>
+                        <li>Must be redundant for safety (If one belt or pulley breaks another one will support the load) – Auto belt tensioning.</li>
+                        <li>It must be hard for operators get anything stuck in the machine.</li>
+                        <li>The robot must be precise.</li>
+                        <li>Must include mounting holes for the base to be secured to the ground easily.</li>
+                        <li>Failsafe's built in (ensures g2 timing belts won’t slip and cause the arm to drop).</li>
+                    </ul>
+                    <br>
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    <div class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/5e39ab4c64584c8b92ebe7a8c8c527e4/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/5e39ab4c64584c8b92ebe7a8c8c527e4?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">G2 Pulley</a> by <a href="https://sketchfab.com/theawsomeminer2?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Jayden Downes</a> on <a href="https://skfb.ly/6zD9E" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>
+                    <br>
+                    <table class="table table-bordered table-striped">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Profile</th>
+                                        <td><img src="http://www.sdp-si.com/products/details/belt-detail-images/GT2-belt-profile.png"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Pitch</th>
+                                        <td>2 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Pitch Length</th>
+                                        <td>152 teeth per ft. (500 teeth per meter)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Standard Widths</th>
+                                        <td>.236, .354 &amp; .472 in. (6, 9 &amp; 12 mm)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Material</th>
+                                        <td>Nylon Covered Neoprene Belt, Fiberglass Reinforced, Stainless Steel.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                    
+                    <br>
+                    <br>
+                    
+                    
+                    <h3>3 Part Pulley:</h3>
+                    <p>The Three Part Pulley is the main pulley which is used as a positioning system for the belts in order to keep them in the correct location within the Robotic Arm Frame. The bearing pulleys have a bearing each 180 degrees in order to prevent the belt from drifting off to one side when the robotic arm is not in a upright (stright) position.</p>
+                    <div class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/461d34c63b194362b2b0289bd00b186a/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/461d34c63b194362b2b0289bd00b186a?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">3-Part-Pulley</a> by <a href="https://sketchfab.com/theawsomeminer2?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Jayden Downes</a> on <a href="https://skfb.ly/6zD9E" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>
+                    
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>Frame:</h3>
+                    <p>The frame makes up the most part of the robotic arms area. It is made of structural steal beams that are placed inside of an aluminum shell that is coated in rubber to prevent damages to the frame upon being hit by objects. It also prevents concrete or other building materials from sticking to the frame in a building environment.</p>
+                    <div class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/66c047d92c824ea691ebf91f49ad74bd/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/66c047d92c824ea691ebf91f49ad74bd?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Frame Section</a> by <a href="https://sketchfab.com/theawsomeminer2?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Jayden Downes</a> on <a href="https://skfb.ly/6zD9E" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>Turn Mechanism:</h3>
+                    <p>Text here.</p>
+                    <div class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/f78faaac472f4c61947f4e066b72fd22/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/f78faaac472f4c61947f4e066b72fd22?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Turning Mechanism</a> by <a href="https://sketchfab.com/theawsomeminer2?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Jayden Downes</a> on <a href="https://skfb.ly/6zD9E" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    
+                    <br>
+                    <br>
+                    
+                    <h3>G2 Pulley:</h3>
+                    <p>The G2 Pulley is the main type of pulley used in the robotic arm, it allows the system's G2 belts to spin around an axis with extreeme precision using the engraved teeth. G2 belts and pulleys are commonly used in the producing of machines such as CNCs and 3D printers. They allow the movement of two or more diffrent pulleys in the same direction and are reinforced with stainless steel cables to prevent expanding of the belt under pressure and this minimising output inconsistancies. The setup used in the 3D model below is not used throughout the design and only the actual pulley is used. At times the pulley is also modified to act as a bearing to position the belts in the correct location within the Robotic Arm Frame.</p>
+                    
+                    <br>
+                    <br>
+                    
+                    
+                    
+                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don&#x2019;t look even slightly believable.</p>
+                    <div
+                            class="p-t-b-40">
+                        <div class="lightSlider" data-item="1" data-center-slide="true">
+                            <div class="item">
+                                <img src="assets/img/demo/n1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/dummy/un2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="container">
+                <div class="col-xl-8 mx-md-auto">
+                    <p><span class="count">250 people found this article helpful what about you?</span>
+                        <a
+                                class="feedback-btn" href="#"><span class="icon-yes"></span>
+                        </a> <a class="feedback-btn" href="#"><span class="icon-not"></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</div>
+<!--End Page page_wrrapper -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
