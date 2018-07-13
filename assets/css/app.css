@@ -26693,6 +26693,11 @@ ul.arrow-list li::before {
   font-weight: 100;
   padding: 40px 0;
 }
+.single .post .excerpt2 {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px 0;
+}
 
 .single .post-comments {
   background-color: #f5f8fa;
