@@ -2162,7 +2162,7 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #038fce;
+  background-color: rgba(3, 143, 206, 1);
   border-color: #0286c2;
 }
 
@@ -2737,7 +2737,6 @@ fieldset:disabled a.btn {
 
 .btn-block {
   display: block;
-  width: 100%;
 }
 
 .btn-block + .btn-block {
@@ -22529,7 +22528,7 @@ input[type="checkbox"], input[type="radio"] {
 
 .btn-primary:hover, .btn-primary:focus {
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.26);
-  opacity: 0.8;
+  opacity: 0.2;
   color: #fff;
   background: #03a9f4;
 }
