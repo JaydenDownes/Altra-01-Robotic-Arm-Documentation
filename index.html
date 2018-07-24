@@ -57,8 +57,8 @@
                                 <li class="list-group-item"><a href="https://drive.google.com/open?id=1P7JaPehqHrY-c261_3i63RGWOXhASHel">Brainstorming</a></li>
                                 <li class="list-group-item"><a href="#research">Research</a></li>
                                 <li class="list-group-item">Drawings - <a href="#G2Pulley">G2 Pulley</a> - <a href="#3PartPulley">3 Part Pulley</a> - <a href="#Frame">Frame</a> - <a href="#TurnMechanism">Turn Mechanism</a> - <a href="#Arm">Whole Robotic Arm</a></li>
-                                <li class="list-group-item"><a href="#">Lists</a></li>
-                                <li class="list-group-item"><a href="#">Test</a></li>
+                                    <li class="list-group-item">Lists - <a href="#G2Pulley">TimeLine</a> - <a href="#ProductionSequance">Production Sequance</a> - <a href="#Materials">Costs, Materials</a> - <a href="https://drive.google.com/drive/folders/14RCGcUFHsC4CkNHbIe0ehc2hye6hQW7I?usp=sharing">Cutting &amp; Printing List</a></li>
+                                <li class="list-group-item">Test - <a href="#G2Pulley">DataSheet</a> - <a href="">Photos</a> - <a href="">TickSheet</a></li>
                                 <li class="list-group-item"><a href="#">Evalutation</a></li>
                                 <li class="list-group-item"><a href="#">References</a></li>
                                 </ul>
@@ -89,59 +89,68 @@
 										<td>520KG</td>
 										<td>Small</td>
 										<td>N/A</td>
+                                        <td>100gm</td>
 									</tr>
 									<tr>
 										<th scope="row">Materials</th>
 										<td>Stainless Steel, HSLA Steel, Aluminum</td>
 										<td>Plastic (Can be made out of any 3D printing material).</td>
 										<td>HSLA Steel, Aluminium, Steel.</td>
+                                        <td>Injection Molded Plastic</td>
 									</tr>
 									<tr>
 										<th scope="row">Mounting Positions</th>
 										<td>✓</td>
 										<td>X</td>
 										<td>✓</td>
+                                        <td>X</td>
 									</tr>
 									<tr>
 										<th scope="row">IP Rating</th>
 										<td>65</td>
 										<td>23</td>
 										<td>N/A</td>
+                                        <td>7</td>
 									</tr>
 									<tr>
 										<th scope="row">No. Axis'</th>
 										<td>6</td>
 										<td>5</td>
 										<td>7</td>
+                                        <td>5</td>
 									</tr>
 									<tr>
 										<th scope="row">Reliablilty</th>
 										<td>High (Sensors)</td>
 										<td>High (Stepper Motors - Rare failiture)</td>
 										<td>High (Sensors, Stepper motors are from reliable source)</td>
+                                        <td>Low - No sensors - No redundancy motors - cheap 12v Standard motors.</td>
 									</tr>
 									<tr>
 										<th scope="row">Motors</th>
 										<td>Clearpath Servos</td>
 										<td>Nema 17 &amp; 23</td>
 										<td>ClearPath Servo</td>
+                                        <td>12v Brushed Motor + Gear stepdown.</td>
 									</tr>
 									<tr>
 										<th scope="row">Redundancy</th>
 										<td>Low</td>
 										<td>Low (Only one belt per axis)</td>
 										<td>None</td>
+                                        <td>Medium (Worm Gears and dual plates to hold main arm).</td>
 									</tr>
 									<tr>
 										<th scope="row">Images</th>
 										<td><img src="https://www.aec.at/aeblog/files/2017/03/Johannes-Braumann_Robot-Doing-Nothing_886x590.jpg"></td>
 										<td><img src="https://files.cults3d.com/uploaders/11417472/illustration-file/1469701604-32610-1748/IMG_7111_ok1_large.jpg"></td>
 										<td><img src="https://i.pinimg.com/736x/77/d7/4f/77d74fb8faf71c6c68663f600463e46b--industrial-robots-robot-kits.jpg"></td>
+                                        <td><img src="http://www.globalpc.co.nz/prodimages/K1107.jpg"></td>
 									</tr>
 								</tbody>
-							</table><br>
+							</table><br> <a name="Materials"></a>
 							<br>
-							<h3>Materials <small>(For Prototype)</small>:</h3>
+							<h3>Materials <small>(For Prototype)</small>:</h3> 
 							<table class="table table-bordered table-striped">
 								<tbody>
 									<tr>
@@ -367,6 +376,11 @@
 							</table><a name="ToolsSafety"></a><br>
 							<h3>Tools and Safety:</h3>
 							<p>"A team of scientists has published a study that details the health hazards of 3D printing in enclosed spaces, which it says causes the release of toxic and carcinogenic particles." For this reason, it is recommended to keep 3D printers in a well-ventelated environment. The same can be said for laser cutters as dangerous gasses can be expelled from the machine when cutting Synthetic polymers such as; plastics like polyethylene, polycarbonate, polypropylene, as well as synthetic rubber, polyvinyl chloride (PVC), polyethylene, phosgene and many other materials.</p><br>
+                            
+                            <a name="ProductionSequance"></a><br>
+                            <h3>Production Sequance</h3>
+                            <p>Text here</p>
+
                             <a name="references"></a>
                             <br> 
 							<br>
@@ -381,11 +395,12 @@
 							<br>
 							<br>
                             <h3>Evaluation</h3><br>
-                            <p>The design proposed in this project compensates for the lack of automation in the construction industry and minimalizes the amount of time and resources needed to build houses and larger structures. The Robotic arm is robust, although only being made out of plastic at the current stage, it is also highly modular and can be easily fixed upon parts breaking. The three-axis' allow for a more fluid movement and also allows the arm to reach into places a regular two axis crane wouldn't be able to reach. Currently there are some issues in the design with tolerances between moving parts, this is due to 3D Print Slicing which has to compensate for a 0.3mm nozzle, meaning parts will most likely always have a size divisible by 0.3mm, to compensate for this parts have been sanded down to reach the proper dimensions as scaling it down will likely still have the same issue. Another problem occurred during this project was the accuracy of the 3D Printers and Laser Cutters, due to their Stepper Motor and "Tool" Accuracy. This made printing certain parts like bevel gears hard as they would come out with inconsistent results and/or not be good enough quality to use in a final working design, to get around this an SLA (Stereolithography) Printer was used for gear components. SLA printing used either an LCD or fine and well-focused UV laser to cure UV sensitive resin. This laser usually has a lot more idealistic results but the machines themselves cost a lot more and are expensive to run. This will not be an issue in the final product due to the parts being scaled up exponentially and being manufactured on more precise machines that what we currently have available for the prototype.</p>
+                            <p>The design proposed in this project compensates for the lack of automation in the construction industry and minimalizes the amount of time and resources needed to build houses and larger structures. The Robotic arm is robust, although only being made out of plastic at the current stage, it is also highly modular and can be easily fixed upon parts breaking. The three-axis' allow for a more fluid movement and also allows the arm to reach into places a regular two axis crane wouldn't be able to reach. Currently there are some issues in the design with tolerances between moving parts, this is due to 3D Print Slicing which has to compensate for a 0.3mm nozzle, meaning parts will most likely always have a size divisible by 0.3mm, to compensate for this parts have been sanded down to reach the proper dimensions as scaling it down will likely still have the same issue. Another problem occurred during this project was the accuracy of the 3D Printers and Laser Cutters, due to their Stepper Motor and "Tool" Accuracy. This made printing certain parts like bevel gears hard as they would come out with inconsistent results and/or not be good enough quality to use in a final working design, to get around this an SLA (Stereolithography) Printer was used for gear components. SLA printing used either an LCD or fine and well-focused UV laser to cure UV sensitive resin. This laser usually has a lot more idealistic results but the machines themselves cost a lot more and are expensive to run. This will not be an issue in the final product due to the parts being scaled up exponentially and being manufactured on more precise machines that what we currently have available for the prototype. Good parts of this design include the turn mechanism idea, but this could still be improved by swithcing over to stainless steel rods and pulleys in the future product due to belts sliping from being too tight and parts warping under tension.</p>
 							<br>
 							<br>
 							<h3>Downloads</h3><br>
-							<a class="btn btn-lg btn-default" href="Altra-01.zip"><span class="glyphicon glyphicon-cloud-download"></span> Download Model Files (.ZIP)</a> <a class="btn btn-lg btn-default" href="photos" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> Download/View Design Photos</a> <a class="btn btn-lg btn-default" href="concepts" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> Download/View Concepts &amp; Brainstorms</a> <!--    <div
+							<a class="btn btn-lg btn-default" href="https://drive.google.com/file/d/1C_uSSeZsutpNz_el_-zN7k7JMb6UhA83/view?usp=sharing"><span class="glyphicon glyphicon-cloud-download"></span> Download Model Files (.ZIP)</a> <a class="btn+
+                                btn-lg btn-default" href="photos" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> Download/View Design Photos</a> <a class="btn btn-lg btn-default" href="concepts" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> Download/View Concepts &amp; Brainstorms</a>   <a class="btn btn-lg btn-default" href="cut-print-list" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> Cutting / Printing List</a> <!--    <div
                             class="p-t-b-40">
                         <div class="lightSlider" data-item="1" data-center-slide="true">
                             <div class="item">
